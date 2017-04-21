@@ -18,6 +18,8 @@ namespace LocalFunctions
             WriteLine(FibonacciWithLocal(n));
 
             WriteLine(GetTemperature(100));
+
+            ReadKey();
         }
 
 
