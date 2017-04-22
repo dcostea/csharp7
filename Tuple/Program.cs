@@ -6,7 +6,7 @@ namespace Tuple
     {
         static void Main(string[] args)
         {
-            var n = 1000;
+            var n = 37;
 
             Write("Fibonacci numbers using tuples... ");
             WriteLine(FibonacciWithTuple(n).current);
