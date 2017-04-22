@@ -1,12 +1,12 @@
 ﻿using static System.Console;
 
-namespace Tuples
+namespace Tuple
 {
     class Program
     {
         static void Main(string[] args)
         {
-            var n = 37;
+            var n = 1000;
 
             Write("Fibonacci numbers using tuples... ");
             WriteLine(FibonacciWithTuple(n).current);

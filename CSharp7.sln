@@ -17,6 +17,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TupleGetMax", "TupleGetMax\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TupleSelectSort", "TupleSelectSort\TupleSelectSort.csproj", "{27DEB6BE-B18C-4296-BE97-99420FA624CD}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{21F15069-D281-4A68-8F54-6C585241A207}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fibonacci", "Fibonacci\Fibonacci.csproj", "{DA50AE67-F5EA-4D10-AEAB-30CEBAC485F8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +58,10 @@ Global
 		{27DEB6BE-B18C-4296-BE97-99420FA624CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{27DEB6BE-B18C-4296-BE97-99420FA624CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{27DEB6BE-B18C-4296-BE97-99420FA624CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA50AE67-F5EA-4D10-AEAB-30CEBAC485F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA50AE67-F5EA-4D10-AEAB-30CEBAC485F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA50AE67-F5EA-4D10-AEAB-30CEBAC485F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA50AE67-F5EA-4D10-AEAB-30CEBAC485F8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
