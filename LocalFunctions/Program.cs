@@ -7,7 +7,9 @@ namespace LocalFunctions
     {
         static void Main(string[] args)
         {
-            WriteLine(GetTemperature(100));
+            int degrees = 100;
+
+            WriteLine($"{degrees} Celsius -> {GetTemperature(degrees)} Fahrenheit");
 
             ReadKey();
 

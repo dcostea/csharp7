@@ -79,7 +79,7 @@ namespace PatternMatching
             }
             else
             {
-                WriteLine("<other>");
+                WriteLine($"<other object> {obj.GetType()}");
             }
         }
 

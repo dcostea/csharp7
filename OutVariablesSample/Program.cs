@@ -11,23 +11,22 @@ namespace OutVariablesSample
     {
         static void Main(string[] args)
         {
-            if (int.TryParse("42", out int x))
+            string number = "42";
+
+            if (int.TryParse(number, out int x))
             {
                 WriteLine($"the result is {x}");
             }
-
 
             GetCoordinates(out _, out int y); // I don't care about x!
             WriteLine($"the result is {y}");
 
             ReadKey();
 
-
-
             void GetCoordinates(out int a, out int b)
             {
-                a = 42;
-                b = 24;
+                a = 1;
+                b = 2;
             }
         }
     }
