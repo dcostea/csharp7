@@ -1,12 +1,8 @@
-New Cool Features In C# 7.0
+# New Cool Features In C# 7.0
 
-Out Variables
-Tuples
-Local Functions
-Pattern Matching
-Ref Returns and Locals
+Out Variables|Tuples|Local Functions|Pattern Matching|Ref Returns and Locals
 
-Issues:
+## Issues:
 
 If you plan to use C# 7.0 features in a MVC application there are some setting that must be done.
 Follow these steps:
