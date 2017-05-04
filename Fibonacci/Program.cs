@@ -9,42 +9,35 @@ namespace Fibonacci
         {
             var sw = Stopwatch.StartNew();
 
-            int n = 35;
+            Write("Please note a value grater than 35 will become dramatically slow.\nGet n: ");
+            int n = int.Parse(ReadLine());
 
             sw.Restart();
-            Write("Fibonacci with tuple... ");
-            Write(FibonacciWithTuple(n).current);
+            WriteLine($"\nFibonacci with value tuple (liniar complexity n)... {FibonacciWithValueTuple(n).current}");
             sw.Stop();
-            WriteLine($" - {sw.ElapsedMilliseconds} ms");
+            WriteLine($"{sw.ElapsedMilliseconds} ms \n");
 
             sw.Restart();
-            Write("Fibonacci with tuple and local function... ");
-            Write(FibonacciWithTupleAndLocal(n));
+            WriteLine($"Fibonacci with value tuple and local function... {FibonacciWithValueTupleAndLocal(n)}");
             sw.Stop();
-            WriteLine($" - {sw.ElapsedMilliseconds} ms");
-
-            WriteLine("-----------------------------");
+            WriteLine($"{sw.ElapsedMilliseconds} ms \n");
 
             sw.Restart();
-            Write("Fibonacci classic... ");
-            Write(Fibonacci(n));
+            WriteLine($"Fibonacci classic (exponential complexity 2^n)... {Fibonacci(n)}");
             sw.Stop();
-            WriteLine($" - {sw.ElapsedMilliseconds} ms");
+            WriteLine($"{sw.ElapsedMilliseconds} ms \n");
 
             sw.Restart();
-            Write("Fibonacci classic with local function... ");
-            Write(FibonacciWithLocal(n));
+            WriteLine($"Fibonacci classic with local function... {FibonacciWithLocal(n)}");
             sw.Stop();
-            WriteLine($" - {sw.ElapsedMilliseconds} ms");
+            WriteLine($"{sw.ElapsedMilliseconds} ms \n");
 
             sw.Restart();
-            Write("Fibonacci classic with local function and espression-bodied... ");
-            Write(FibonacciWithLocalExpressionBodied(n));
+            WriteLine($"Fibonacci classic with local function and espression-bodied... {FibonacciWithLocalExpressionBodied(n)}");
             sw.Stop();
-            WriteLine($" - {sw.ElapsedMilliseconds} ms");
+            WriteLine($"{sw.ElapsedMilliseconds} ms \n");
 
-            ReadKey();
-
+            ReadKey(true);
 
             long FibonacciWithLocal(int x)
             {
@@ -63,15 +56,15 @@ namespace Fibonacci
             return Fibonacci(n - 2) + Fibonacci(n - 1);
         }
 
-        private static (long current, long previous) FibonacciWithTuple(int n) // Fibonacci as Method
+        private static (long current, long previous) FibonacciWithValueTuple(int n) // Fibonacci as Method
         {
             if (n == 0) return (1, 0);
-            var (curr, prev) = FibonacciWithTuple(n - 1);
+            var (curr, prev) = FibonacciWithValueTuple(n - 1);
 
             return (curr + prev, curr);
         }
 
-        public static long FibonacciWithTupleAndLocal(int x)
+        public static long FibonacciWithValueTupleAndLocal(int x)
         {
             return Fibonacci(x).current;
 
